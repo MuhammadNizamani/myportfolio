@@ -1,0 +1,49 @@
+
+> nice-napi@1.0.2 install /media/ishaque/b2681382-1a01-486d-8f51-52e6a9a56864/my folder/myportfolio/node_modules/nice-napi
+> node-gyp-build
+
+
+> protobufjs@7.2.3 postinstall /media/ishaque/b2681382-1a01-486d-8f51-52e6a9a56864/my folder/myportfolio/node_modules/@grpc/grpc-js/node_modules/protobufjs
+> node scripts/postinstall
+
+
+> core-js@3.19.0 postinstall /media/ishaque/b2681382-1a01-486d-8f51-52e6a9a56864/my folder/myportfolio/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js:[0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://patreon.com/zloirock [0m
+[96m>[94m https://paypal.me/zloirock [0m
+[96m>[94m bitcoin: bc1qlea7544qtsmj2rayg0lthvza9fau63ux0fstcz [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> esbuild@0.13.12 postinstall /media/ishaque/b2681382-1a01-486d-8f51-52e6a9a56864/my folder/myportfolio/node_modules/esbuild
+> node install.js
+
+
+> protobufjs@6.11.3 postinstall /media/ishaque/b2681382-1a01-486d-8f51-52e6a9a56864/my folder/myportfolio/node_modules/protobufjs
+> node scripts/postinstall
+
+
+> @angular/cli@13.0.3 postinstall /media/ishaque/b2681382-1a01-486d-8f51-52e6a9a56864/my folder/myportfolio/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+
+> @fortawesome/fontawesome-free@5.15.4 postinstall /media/ishaque/b2681382-1a01-486d-8f51-52e6a9a56864/my folder/myportfolio/node_modules/@fortawesome/fontawesome-free
+> node attribution.js
+
+Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+
++ yargs-parser@21.1.1
+added 1149 packages from 1211 contributors and audited 1171 packages in 305.734s
+
+92 packages are looking for funding
+  run `npm fund` for details
+
+found 59 vulnerabilities (2 low, 10 moderate, 39 high, 8 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
