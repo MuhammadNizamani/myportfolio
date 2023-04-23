@@ -1,0 +1,170 @@
+<!-- contact
+   ================================================== -->
+<section id="contact">
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>Contact</h5>
+      <h1>I'd Love To Hear From You.</h1>
+
+      <p class="lead">
+        Hello! What can I do to assist you? To get in touch with me, simply send me a note.
+      </p>
+    </div>
+  </div>
+  <!-- /section-intro -->
+
+  <div class="row contact-form">
+    <div class="col-twelve">
+      <!-- form -->
+      <form
+      [formGroup]="myForm"
+
+        name="contact_form"
+        id="contact-form"
+        method="post"
+        (submit)="sendEmail($event)"
+      >
+        <div class="form-field">
+          <input
+            name="contact_name"
+            formControlName="name"
+            ngModel
+            type="text"
+            id="contact_name"
+            placeholder="Name *"
+            minlength="2"
+            required
+          />
+          <span style="color: #FF0077;" *ngIf="name && name.invalid && name.touched">This field is required. </span>
+          <span style="color: #FF0077;" *ngIf="name?.hasError('minlength')"> Name should be greater then 3 character.</span>
+          <span style="color: #FF0077;" *ngIf="name?.hasError('maxlength')"> Name should be less then 20 character.</span>
+        </div>
+        <div class="form-field">
+          <input
+            name="from_email"
+            formControlName="email"
+            type="email"
+            id="from_email"
+            placeholder="Email *"
+            required
+          />
+
+          <span style="color: #FF0077;" *ngIf="email && email.invalid && email.touched">This field is required. </span>
+          <span style="color: #FF0077;" *ngIf=" email!.hasError('email')"> Invalid Email address.</span>
+
+        </div>
+
+        <div class="form-field">
+          <input
+            name="company"
+            formControlName="company"
+            ngModel
+            type="text"
+            id="company"
+            placeholder="Company"
+          />
+          <!-- <span *ngIf="company && company.invalid && company.touched">This field is required.</span> -->
+          <span style="color: #FF0077;" *ngIf="company?.hasError('minlength')"> Company name should be greater then 3 character.</span>
+          <span style="color: #FF0077;" *ngIf="company?.hasError('maxlength')"> Company name should be less then 20 character.</span>
+
+        </div>
+
+        <div class="form-field">
+          <input
+            name="subject"
+            formControlName="subject"
+            ngModel
+            type="text"
+            id="subject"
+            placeholder="Subject"
+          />
+          <!-- <span *ngIf="company && company.invalid && company.touched">This field is required.</span> -->
+          <span style="color: #FF0077;" *ngIf="subject?.hasError('minlength')"> Subject should be greater then 5 character.</span>
+          <span style="color: #FF0077;" *ngIf="subject?.hasError('maxlength')"> Subject should be less then 50 character.</span>
+        </div>
+        <div class="form-field">
+          <textarea
+            name="message"
+            formControlName="message"
+            ngModel
+            id="message"
+            placeholder="message *"
+            rows="10"
+            cols="50"
+            required
+          ></textarea>
+          <span style="color: #FF0077;" *ngIf="message && message.invalid && message.touched">This field is required.</span>
+          <span style="color: #FF0077;" *ngIf="message?.hasError('minlength')"> Message should be greater then 5 character.</span>
+          <span style="color: #FF0077;" *ngIf="message?.hasError('maxlength')"> Message should be less then 500 character.</span>
+
+        </div>
+        <div class="form-field">
+
+          <div class="alert alert-dark" role="alert" *ngIf="alertShow === true">
+            Message successfully sent!
+          </div>
+
+          <button [disabled]="myForm.invalid" *ngIf="spin === false" class="submitform" type="submit">
+            Submit
+          </button>
+          <div class="spinner">
+            <mat-spinner [color]="color" *ngIf="spin === true"></mat-spinner>
+          </div>
+        </div>
+      </form>
+      <!-- Form End -->
+
+      <!-- contact-warning -->
+      <div id="message-warning"></div>
+      <!-- contact-success -->
+      <div id="message-success">
+        <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+      </div>
+    </div>
+    <!-- /col-twelve -->
+  </div>
+  <!-- /contact-form -->
+
+  <div class="row contact-info">
+    <div class="col-four tab-full">
+      <div class="icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+
+      <h5>Where to find me</h5>
+
+      <p>
+        Tando Soomro<br />
+        Tando Allahyar, Sindh<br />
+        Pakistan
+      </p>
+    </div>
+
+    <div class="col-four tab-full">
+      <div class="icon">
+        <i class="far fa-envelope"></i>
+      </div>
+
+      <h5>Email Me At</h5>
+
+      <p>
+        ishaque.niz786@gmail.com<br />
+      </p>
+    </div>
+
+    <div class="col-four tab-full">
+      <div class="icon">
+        <i class="fas fa-phone-alt"></i>
+      </div>
+
+      <h5>Call Me At</h5>
+
+      <p>
+        Mobile: (+92) 3464897524<br />
+        Mobile: (+92) 3173386731<br />
+      </p>
+    </div>
+  </div>
+  <!-- /contact-info -->
+</section>
+<!-- /contact -->

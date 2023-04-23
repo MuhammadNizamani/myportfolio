@@ -1,0 +1,104 @@
+<!-- services Section
+   ================================================== -->
+<section id="services">
+  <div class="overlay"></div>
+
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>Services</h5>
+      <h1>What Can I Do For You?</h1>
+
+      <p class="lead">
+        Take a look at some of the services I provide.
+      </p>
+    </div>
+  </div>
+  <!-- /section-intro -->
+
+  <div id="owl-slider" class="row services-list services-content">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide="true">
+        <div class="service owl-lazy">
+          <span class="icon"><i class="fas fa-code"></i></span>
+          <div class="service-content">
+            <h3>API design</h3>
+            <p class="desc">
+              API Design service creates scalable and secure APIs that facilitate seamless communication between software applications. 
+              I follows industry standards to design efficient APIs for web applications, mobile apps, and IoT devices. 
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="service">
+          <span class="icon"><i class="fas fa-brain"></i></span>
+          <div class="service-content">
+            <h3>Machine Learning</h3>
+            <p class="desc">
+              I specialize in creating accurate and efficient machine learning models for various applications, such as image recognition, natural language processing, and recommendation systems. With cutting-edge algorithms and best practices in model training, evaluation, and deployment, my service delivers scalable and reliable solutions.
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="service">
+          <span class="icon"><i class="fas fa-database"></i></span>
+          <div class="service-content">
+            <h3>Database Design</h3>
+            <p class="desc">
+              As a Database Design service, I create robust and efficient database systems using best practices in modeling, schema design, and optimization. Trust me to deliver scalable and reliable solutions for seamless data management and informed decision making.
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="service">
+          <span class="icon"><i class="fa fa-cog fa-spin"></i>
+</span>
+          <div class="service-content">
+            <h3>Microservices</h3>
+            <p class="desc">
+              As a Microservices Design service, I create scalable and modular microservice architectures for modern applications. Trust me to design and implement agile microservices that enhance performance, scalability, and resilience for your applications.
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="service">
+          <span class="icon"><i class="fas fa-cloud"></i></span>
+          <div class="service-content">
+            <h3>Cloud applications</h3>
+            <p class="desc">
+              Cloud app development entails creating programmes that run in the
+              cloud and take advantage of cloud vendors capabilities and
+              services.
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="service">
+          <span class="icon"><i class="fas fa-desktop"></i></span>
+          <div class="service-content">
+            <h3>Data Scientist</h3>
+            <p class="desc">
+              As a Data Scientist, I specialize in leveraging advanced analytics, machine learning, and statistical techniques to extract valuable insights from data. From exploratory data analysis to predictive modeling, I provide data-driven solutions that empower decision making, optimize processes, and drive business success.
+            </p>
+          </div>
+        </div>
+        <!-- /service -->
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+<!-- /services -->

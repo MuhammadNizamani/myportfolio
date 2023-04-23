@@ -1,0 +1,14 @@
+button {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+}
+
+button:hover{
+  color: #cc005f;
+  background: #313131;
+}

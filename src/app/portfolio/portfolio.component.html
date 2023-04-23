@@ -1,0 +1,235 @@
+<!-- Portfolio Section
+   ================================================== -->
+<section id="portfolio">
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>Portfolio</h5>
+      <h1>Check Out Some of My Works.</h1>
+
+      <p class="lead">
+        Here are few of my works from both during and after my graduation.
+      </p>
+    </div>
+  </div>
+  <!-- /section-intro-->
+
+  <div class="row">
+    <div class="col gif">
+      <div class="bgrid folio-item">
+        <div class="item-wrap">
+          <img
+            src="../assets/images/portfolio/app.gif"
+            alt="Liberty"
+          />
+          <a href="#modal-01" class="overlay">
+            <div class="folio-item-table">
+              <div class="folio-item-cell" (click)="open(m1)">
+                <h3 class="folio-title">Cropix</h3>
+                <span class="folio-types"> Flutter </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row portfolio-content">
+    <div class="col-twelve">
+      <!-- portfolio-wrapper -->
+      <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img
+              src="../assets/images/portfolio/laborApp.png"
+              alt="Shutterbug"
+            />
+            <a href="#modal-02" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell" (click)="open(m2)">
+                  <h3 class="folio-title">Labor App</h3>
+                  <span class="folio-types"> Flutter </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- /folio-item -->
+        <div class="bgrid folio-item">
+          <div class="item-wrap">
+            <img
+              src="../assets/images/portfolio/thesis.png"
+              alt="Clouds"
+            />
+            <a href="#modal-03" class="overlay">
+              <div class="folio-item-table">
+                <div class="folio-item-cell" (click)="open(m3)">
+                  <h3 class="folio-title">SMART AGRICULTURE</h3>
+                  <span class="folio-types"> Flutter & REST API </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+         <!-- /folio-item -->
+         
+
+        <!-- modal popups - begin
+	            ============================================================= -->
+
+        <ng-template #m1 let-modal>
+          <!-- /modal-01 -->
+
+          <div class="popup-modal">
+            <div class="modal-header">
+              <div class="media">
+                <img
+                  src="../assets/images/portfolio/app.gif"
+                  alt=""
+                />
+              </div>
+              <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+            </div>
+
+            <div class="modal-body">
+              <div class="description-box">
+                <h4>Cropix</h4>
+                <p>
+                  This app is for landloards and farmers, it allows you 
+                  to save details of your crop, income, expense and generate profit & report for both farmer and the owner of the land.
+                </p>
+
+                <div class="categories">
+                  Technologies: Flutter | Dart | Firebase | Material
+                  design | Computer Vision
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button> -->
+
+              <div class="link-box">
+                <!-- <a href="">Details</a> -->
+                <a
+                  (click)="modal.close('Save click')"
+                  class="popup-modal-dismiss"
+                  >Close</a
+                >
+              </div>
+            </div>
+
+            <div id="modal-01" class="popup-modal slider mfp-hide"></div>
+          </div>
+        </ng-template>
+        <!-- /modal-01 -->
+
+        <ng-template #m2 let-modal>
+          <!-- /modal-01 -->
+
+          <div class="popup-modal">
+            <div class="modal-header">
+              <div class="media">
+                <img
+                  src="../assets/images/portfolio/modals/laborApp.png"
+                  alt=""
+                />
+              </div>
+              <!-- <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+
+            <div class="modal-body">
+              <div class="description-box">
+                <h4>Labor App</h4>
+                <p>
+                  This labor mobile app keeps track of a worker's daily
+                  earnings, costs, and advance payments.
+                </p>
+
+                <div class="categories">
+                  Technologies: Flutter | Dart | Django | Material Design
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button> -->
+
+              <div class="link-box">
+                <!-- <a href="">Details</a> -->
+                <a
+                  (click)="modal.close('Save click')"
+                  href="#"
+                  class="popup-modal-dismiss"
+                  >Close</a
+                >
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <!-- /modal-02 -->
+
+        <ng-template #m3 let-modal>
+          <!-- /modal-03 -->
+
+          <div class="popup-modal">
+            <div class="modal-header">
+              <div class="media">
+                <img
+                  src="../assets/images/portfolio/thesis.png"
+                  alt=""
+                />
+              </div>
+          
+            </div>
+
+            <div class="modal-body">
+              <div class="description-box">
+                <h4>SMART AGRICULTURE</h4>
+                <p>
+                  In agrarian Pakistan, farmers face challenges with soil fertility, characteristics, pH, and moisture. 
+                  To address these issues, we propose a software-hardware solution that includes a cross-platform 
+                  application built on "Flutter" using "Dart Programming Language" with algorithms, APIs, and backend techniques for soil analysis. 
+                  The hardware component will utilize Arduino and moisture/pH sensors for detection. 
+                  Computer vision will be employed to digitally investigate soil images and provide accurate results for soil pH. 
+                  Our project aims to provide a combined software-hardware solution with computer vision for detecting soil 
+                  moisture and pH levels accurately and equivalently.
+                </p>
+
+                <div class="categories">
+                  Technologies: Flutter | Firebase | OpenCV | FastAPI | Arduino 
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button> -->
+
+              <div class="link-box">
+                <!-- <a href="">Details</a>   width should be 50% if you want to use this  -->
+                <a
+                  (click)="modal.close('Save click')"
+                  href="#"
+                  class="popup-modal-dismiss"
+                  >Close</a
+                >
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <!-- /modal-02 -->
+
+       
+
+        <!-- modal popups - end
+	            ============================================================= -->
+      </div>
+      <!-- /portfolio-wrapper -->
+    </div>
+    <!-- /twelve -->
+  </div>
+  <!-- /portfolio-content -->
+</section>
+<!-- /portfolio -->

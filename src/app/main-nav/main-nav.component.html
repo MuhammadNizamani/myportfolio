@@ -1,0 +1,48 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+      <div class="matbar">
+        <mat-toolbar><h1>ISHAQUE</h1></mat-toolbar>
+      </div>
+    <mat-nav-list>
+      <a mat-list-item href="#intro" (click)="drawer.close()">Home</a>
+      <a mat-list-item href="#about" (click)="drawer.close()">About</a>
+      <a mat-list-item href="#resume" (click)="drawer.close()">Resume</a>
+      <a mat-list-item href="#portfolio" (click)="drawer.close()">portfolio</a>
+      <a mat-list-item href="#contact" (click)="drawer.close()">Contact</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <!-- <mat-icon aria-label="Side nav toggle icon">menu</mat-icon> -->
+        <span class="material-icons">
+          menu
+          </span>
+      </button>
+      <span>Muhammad Ishaque Nizamani</span>
+      <span class="spacer"></span>
+      <div class="nav-content">
+        <ul>
+          <a href="#intro"><li>Home</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#resume"><li>Resume</li></a>
+          <a href="#portfolio"><li>Portfolio</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+      </div>
+
+
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content ></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
